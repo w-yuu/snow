@@ -1,0 +1,28 @@
+@(message: String)
+
+@import helper._
+
+@main("LoginForm") {
+  <h1>ホーム</h1>
+  <div>
+     <div>現在の込み具合</div>
+     <div>最近の込み具合</div>
+  </div>
+  
+  <h2>バックアップ</h2>
+  
+  <div>ここにドラッグ＆ドロップ</div>
+  <br />
+  <div>または</div>
+  <input type="submit" value="バックアップ">
+  
+  <h2>バックアップ履歴</h2>
+  <table border=1>
+    <tr>
+      <td>#</td>
+      <td>日時</td>
+      <td>サイズ</td>
+      <td>操作</td>
+    </tr>
+  </table>
+}

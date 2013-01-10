@@ -1,0 +1,25 @@
+@(message: String)
+
+@import helper._
+
+@main("LoginForm") {
+  <h1>ログイン</h1>
+  <div>
+    <div>
+      <div>ID</div>
+      <div><input type="text" name="username" id="username" value=""></div>
+    <div>
+  
+    <div>
+      <div>Password</div>
+      <div><input type="text" name="password" id="password" value=""></div>
+    <div>
+    
+    <input type="checkbox" class="login-checkbox" id="auto-login-flg"> 次回から自動ログイン
+    
+    @form(routes.Application.login) {
+        <input type="submit" value="ログイン">
+    }
+    <a href="/reissue">パスワード再発行</a>
+  </div>
+}
