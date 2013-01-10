@@ -1,0 +1,22 @@
+@(message: String)
+
+@import helper._
+
+@main("LoginForm") {
+  <h1>パスワード再発行</h1>
+  <div>
+    <div>
+      <div>ID</div>
+      <div><input type="text" name="username" id="username" value=""></div>
+    <div>
+  
+    <div>
+      <div>メールアドレス</div>
+      <div><input type="text" name="mail-address" id="mail-address" value=""></div>
+    <div>
+    
+    @form(routes.Application.completeReissued) {
+        <input type="submit" value="パスワード再発行">
+    }
+  </div>
+}
